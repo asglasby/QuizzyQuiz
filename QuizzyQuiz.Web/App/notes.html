@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title></title>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="well-lg" ng-controller="Controller">
+
+        <h1>{{firstBoundVariable}}</h1>
+        <div class="btn btn-info" ng-click="Reverse()">Reverse!</div><br /><br />
+
+        <input type="text" ng-model="myInput" /><br />
+        <div class="btn btn-info" ng-click="Reverse2(myInput)">Reverse!</div>
+        <h1>{{BoundVariable}}</h1>
+    </div>
+
+    <div ng-controller="MyController">
+        <input type="text" ng-model="Quiz.QuizName">
+        <input type="button" ng-click="Submit()" />
+
+        <ul>
+            <li ng-repeat="quiz in quizs">{{quiz.QuizName}}</li>
+        </ul>
+    </div>
+
+
+
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/angular-route.js"></script>
+    <script src="Scripts/myAngular.js"></script>
+</body>
+</html>
+

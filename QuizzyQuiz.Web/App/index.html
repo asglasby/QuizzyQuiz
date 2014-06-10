@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title></title>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-controller="MyController">
+        <input type="text" ng-model="Quiz.QuizName">
+        <input type="button" value = "Post Quiz" ng-click="Submit()" />
+
+        <ul>Select a Quiz
+            <li ng-repeat="quiz in quizs"><a href="">{{quiz.QuizName}}</a></li>
+        </ul>
+    </div>        
+
+    <script src="../Scripts/jquery-1.10.2.js"></script>    
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/angular-route.js"></script>
+    <script src="Scripts/myAngular.js"></script>
+</body>
+</html>
