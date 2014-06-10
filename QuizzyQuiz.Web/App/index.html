@@ -6,10 +6,11 @@
 </head>
 <body>
     <div ng-controller="MyController">
+        <!--<h1>Select a Quiz</h1>-->
         <input type="text" ng-model="Quiz.QuizName">
         <input type="button" value = "Post Quiz" ng-click="Submit()" />
 
-        <ul>Select a Quiz
+        <ul>
             <li ng-repeat="quiz in quizs"><a href="">{{quiz.QuizName}}</a></li>
         </ul>
     </div>        
